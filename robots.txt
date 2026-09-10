@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://djrobysirolo.github.io/sitemap.xml
