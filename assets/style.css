@@ -23,13 +23,13 @@ footer{padding:3rem clamp(1.2rem,8vw,9.5rem);display:grid;grid-template-columns:
 .set-meta p{font-size:.72rem;color:#aeb5c1;letter-spacing:.08em;text-transform:uppercase;margin:.25rem 0 0}
 .set-card iframe{display:block;border:0;width:100%;height:120px}
 .footer-logo-link{grid-row:span 2;display:block;width:min(230px,52vw)}
-.footer-logo{display:block;width:100%;height:auto;filter:grayscale(1) invert(1);opacity:.82}
+.footer-logo{display:block;width:100%;height:auto;filter:brightness(0) invert(1);opacity:.82}
 @media(max-width:850px){.listen-section{grid-template-columns:1fr}.hero-media{background-position:59% 24%}.hero-logo{width:125px}.footer-logo-link{grid-row:auto;margin-bottom:1rem}}
 @media(max-width:520px){.hero-media{background-position:60% 18%}.hero-logo{width:105px}.set-card{padding:.8rem}.set-meta h3{font-size:1.25rem}}
 
 /* DJ Roby — vetrina completa */
 .section-logo{display:block;width:clamp(100px,10vw,145px);height:auto;margin:0 0 1.5rem}
-.hero-logo-main{width:clamp(185px,20vw,300px);filter:grayscale(1) invert(1) drop-shadow(0 10px 28px rgba(0,0,0,.55))}
+.hero-logo-main{width:clamp(185px,20vw,300px);filter:brightness(0) invert(1) drop-shadow(0 10px 28px rgba(0,0,0,.55))}
 .hero-text+.hero-text{margin-top:-1rem}
 .hero-text-secondary{font-size:clamp(.92rem,1.2vw,1.03rem);color:#aeb5c1}
 
