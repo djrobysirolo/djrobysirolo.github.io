@@ -26,3 +26,51 @@ footer{padding:3rem clamp(1.2rem,8vw,9.5rem);display:grid;grid-template-columns:
 .footer-logo{display:block;width:100%;height:auto;filter:grayscale(1) invert(1);opacity:.82}
 @media(max-width:850px){.listen-section{grid-template-columns:1fr}.hero-media{background-position:59% 24%}.hero-logo{width:125px}.footer-logo-link{grid-row:auto;margin-bottom:1rem}}
 @media(max-width:520px){.hero-media{background-position:60% 18%}.hero-logo{width:105px}.set-card{padding:.8rem}.set-meta h3{font-size:1.25rem}}
+
+/* DJ Roby — vetrina completa */
+.section-logo{display:block;width:clamp(100px,10vw,145px);height:auto;margin:0 0 1.5rem}
+.hero-logo-main{width:clamp(185px,20vw,300px);filter:grayscale(1) invert(1) drop-shadow(0 10px 28px rgba(0,0,0,.55))}
+.hero-text+.hero-text{margin-top:-1rem}
+.hero-text-secondary{font-size:clamp(.92rem,1.2vw,1.03rem);color:#aeb5c1}
+
+.offers{background:#0d1522;overflow:hidden}
+.offers:before{content:"";position:absolute;width:46vw;aspect-ratio:1;border-radius:50%;right:-18vw;top:-12vw;background:rgba(214,175,99,.07);filter:blur(10px)}
+.offers-heading{position:relative;max-width:850px}
+.offers-heading>p:not(.eyebrow){color:var(--muted);max-width:690px;margin:2rem 0 0}
+.offer-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:4.5rem}
+.offer-card{position:relative;min-height:390px;padding:clamp(1.7rem,3vw,2.6rem);border:1px solid rgba(214,175,99,.24);background:linear-gradient(150deg,rgba(255,255,255,.045),rgba(255,255,255,.012));display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.offer-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(6,10,17,.94) 100%);z-index:0}
+.offer-card:after{content:"";position:absolute;width:210px;aspect-ratio:1;border-radius:50%;top:-85px;right:-70px;opacity:.55}
+.offer-card>*{position:relative;z-index:1}
+.offer-card>span{position:absolute;top:1.6rem;left:1.7rem;font-size:.68rem;letter-spacing:.18em;color:var(--gold-2)}
+.offer-card-italiana:after{background:radial-gradient(circle,#b63b32 0 20%,rgba(182,59,50,.1) 65%,transparent 70%)}
+.offer-card-90:after{background:radial-gradient(circle,#356bd1 0 18%,rgba(53,107,209,.1) 65%,transparent 70%)}
+.offer-card-nudisco:after{background:radial-gradient(circle,#bd8a2d 0 18%,rgba(189,138,45,.1) 65%,transparent 70%)}
+.offer-kicker{margin:0 0 .9rem;color:var(--gold-2);font-size:.68rem;font-weight:700;letter-spacing:.2em}
+.offer-card h3{font-family:var(--serif);font-size:clamp(1.8rem,2.5vw,2.45rem);line-height:1.05;margin:0 0 1.2rem}
+.offer-card>p:last-child{color:#b9c0ca;font-size:.9rem;margin:0}
+
+.event-types{background:var(--paper);color:#101622;border-top:1px solid #d5cec1}
+.event-types .eyebrow{color:#906c29}
+.event-types-heading{max-width:850px}
+.event-types-heading>p:not(.eyebrow){color:#4a5059;max-width:660px;margin:2rem 0 0}
+.event-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:4.5rem;border-top:1px solid #c9c2b5;border-left:1px solid #c9c2b5}
+.event-card{position:relative;padding:clamp(1.7rem,3vw,3rem);border-right:1px solid #c9c2b5;border-bottom:1px solid #c9c2b5;min-height:240px}
+.event-card>span{font-size:.67rem;color:#9b742f;letter-spacing:.17em}
+.event-card h3{font-family:var(--serif);font-size:clamp(1.75rem,2.5vw,2.35rem);line-height:1.08;margin:2.4rem 0 .8rem}
+.event-card p{color:#555b64;font-size:.92rem;max-width:480px;margin:0}
+
+@media(max-width:850px){.hero-logo-main{width:210px}.offer-grid{grid-template-columns:1fr}.offer-card{min-height:320px}}
+@media(max-width:520px){.hero-logo-main{width:185px}.event-grid{grid-template-columns:1fr}}
+
+.listen-section{grid-template-columns:.62fr 1.38fr;align-items:start}
+.set-groups{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.set-group{display:grid;gap:1rem;align-content:start}
+.set-group-heading{min-height:86px;display:flex;align-items:center;gap:1rem;padding:0 .25rem 1rem;border-bottom:1px solid rgba(214,175,99,.35)}
+.set-group-heading>span{width:36px;height:36px;flex:0 0 36px;border:1px solid rgba(214,175,99,.5);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:.68rem}
+.set-group-heading p{margin:0;color:var(--gold-2);font-size:.62rem;font-weight:700;letter-spacing:.18em}
+.set-group-heading h3{margin:.15rem 0 0;font-family:var(--serif);font-size:1.55rem;font-weight:500;line-height:1.1}
+.set-groups .set-card{height:100%}
+.set-groups .set-meta h3{font-size:1.25rem}
+@media(max-width:1120px){.listen-section{grid-template-columns:1fr}.set-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.set-groups{grid-template-columns:1fr}.set-group+.set-group{margin-top:2rem}}
